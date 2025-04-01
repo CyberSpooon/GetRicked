@@ -6,5 +6,3 @@ Start-Sleep -Seconds 3
 ##Start-Process -FilePath $path -WindowStyle Hidden
 Start-Process "wmplayer.exe" -ArgumentList "$path" -WindowStyle Hidden
 Start-Process cmd.exe -ArgumentList "/c curl.exe ascii.live/rick"
-
-
